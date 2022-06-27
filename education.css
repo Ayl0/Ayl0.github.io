@@ -1,0 +1,141 @@
+/* navigation bar styles */
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    background-color: white;
+    margin: 0;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+#navbar{
+    background-color: skyblue;
+    color: rgb(49, 49, 49);
+    width: fit-content;
+    height: 125px;
+    padding-left: 7%;
+    padding-right: 7%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    align-self: center;
+}
+#intro{
+    padding-top: 8px;
+    font-size: x-large;
+    color: rgb(49,49, 49);
+    text-align: center;
+}
+#navigation-buttons{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.navlinks{
+    color: rgb(49, 49, 49);
+    text-decoration: none;
+    padding-top: 5px;
+}
+.navlinks:visited{
+    color: rgb(49, 49, 49);
+}
+.navlinks:hover{
+    font-size: x-large;
+    padding-top: 0;
+}
+
+/* Page specific styles */
+
+h3{
+    color: rgb(49, 49, 49);
+    background-color: skyblue;
+    padding: 1% 3%;
+    border-radius: 33px;
+}
+
+P{
+    color: black;
+    font-size: large;
+}
+
+a{
+    text-decoration: underline;
+    color: black;
+}
+a:visited{
+    color: black;
+}
+
+#page{
+    margin-top: 50px;
+    align-self: center;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.educational_info{
+    display: flex;
+    flex-direction: row;
+    padding: 0 3%;
+    column-gap: 7%;
+}
+
+.para{
+    margin: 0;
+}
+
+.logo_pic{
+    width: 200px;
+    height: auto;
+}
+
+ul{
+    color: black;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width:540px) {
+    #navbar{
+        width: 100%;
+        height: fit-content;
+        border-radius: 0;
+        padding: 10px 10px;
+    }
+    #navigation-buttons{
+        column-gap: 15px;
+    }
+    h3{
+        text-align: center;
+        font-size: small;
+    }
+    .educational_info{
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+    .para{
+        margin-top: 20px;
+    }
+    .image_div{
+        width: 50%;
+        
+    }
+    .logo_pic{
+        width: 100px;
+        padding-left: 60%;
+    }
+    p{
+        font-size: small;
+    }
+    .navlinks{
+        font-size: small;
+    }
+    ul{
+        font-size: x-small;
+    }
+}

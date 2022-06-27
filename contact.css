@@ -1,0 +1,162 @@
+/* navigation bar styles */
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    background-color: white;
+    margin: 0;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+#navbar{
+    background-color: skyblue;
+    color: rgb(49,49, 49);
+    width: fit-content;
+    height: 125px;
+    padding-left: 7%;
+    padding-right: 7%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    align-self: center;
+}
+#intro{
+    padding-top: 8px;
+    font-size: x-large;
+    color: rgb(49,49, 49);
+    text-align: center;
+}
+#navigation-buttons{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.navlinks{
+    color: rgb(49,49, 49);
+    text-decoration: none;
+    padding-top: 5px;
+}
+.navlinks:visited{
+    color: rgb(49,49, 49);
+}
+.navlinks:hover{
+    font-size: x-large;
+    padding-top: 0;
+}
+
+/* Page specific styles */
+
+h2{
+    color: rgb(49,49, 49);
+    background-color: skyblue;
+    padding: 1% 3%;
+    border-radius: 33px;
+}
+
+P{
+    color: black;
+    font-size: large;
+}
+
+a{
+    text-decoration: underline;
+    color: black;
+}
+a:visited{
+    color: black;
+}
+
+#page{
+    align-self: center;
+    margin-top: 50px;
+    width: 75%;
+}
+
+#form{
+    padding: 0% 3%;
+    padding-bottom: 5%;
+    width: 50%;
+    align-self: center;
+}
+input{
+    width:50%;
+}
+textarea{
+    width: 50%;
+    height: 100px;
+    resize: vertical;
+}
+#button{
+    width: 20%;
+    font-size:medium;
+    background-color: skyblue;
+    color: rgb(49,49, 49);
+    border: 0;
+    border-radius: 50px;
+}
+
+#left_right_container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+
+#socials{
+    padding: 3% 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.social_logo{
+    width: 50px;
+}
+
+#social_row{
+    display:flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width:540px) {
+    #navbar{
+        width: 100%;
+        height: fit-content;
+        border-radius: 0;
+        padding: 10px 10px;
+    }
+    #navigation-buttons{
+        column-gap: 10px;
+    }
+    h2{
+        text-align: center;
+    }
+    #left_right_container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #form{
+        width: 100%;
+        text-align: center;
+    }
+    #button{
+        width: 25%;
+        font-size: small;
+    }
+    p{
+        font-size: small;
+    }
+    .navlinks{
+        font-size: small;
+    }
+    #social_row{
+        align-self: center;
+    }
+    #follow{
+        text-align: center;
+    }
+}
